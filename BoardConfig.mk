@@ -35,5 +35,8 @@ TARGET_PROVIDES_LIBLIGHT := true
 # Kernel
 TARGET_KERNEL_CONFIG := z2_row_defconfig
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # inherit from the proprietary version
 -include vendor/zuk/z2_row/BoardConfigVendor.mk
